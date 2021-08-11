@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <style>
+.bg
+{
+    width: 100%;
+    height: 700px;
+    background-image:url("file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Images/banner1.jpg" );
+    background-size: 1000px;
+    padding-top: 100px;
+    opacity: 1;
+}
+.border
+{
+    width: 400px;
+    height: 230px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 40PX;
+}
+input
+{
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: lightgrey;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+button
+{
+    width: 250px;
+    height: 40px;
+    background-color: rgb(243, 163, 57);
+    border-style: none;
+    box-shadow: 2px 2px 5px lightgrey;
+    border-radius: 5px;
+}
+.table{
+  padding-bottom: 10px;
+}
+.box2{
+  padding-bottom: 10px;
+}
+
+        </style>
+
+<script type ="text/Javascript">
+  function validation()
+        {
+            var name = document.getElementById("name1");
+            var pass = document.getElementById("pass1");
+            if(name.value.trim() =="")//trim is to validate space bar space
+            {
+                alert("Blank space not allowed");
+                return false;//if return false it return to the same webpage
+            }            
+            else if(pass.value.trim() =="")
+            {
+                alert("Blank space not allowed");
+                return false;
+            }
+            else if(pass.value.trim().length<5)//length denotes the number of characters 
+            {
+                alert("Password is too short");
+                return false;
+            }
+            else
+            {
+                return true;//if return true it will return to the given next webpage
+                alert("LOg")
+            }
+        }
+        
+    </script>
+
+    </head>
+    <body>
+    <div class="bg">
+        <div class="border">
+            <h2>LOGIN TO SHOP</h2>
+ <form onsubmit="return validation()" action="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/shoppiee.html">
+ <div class="table">
+<input type="text" id="name1" name="name/email" placeholder="Enter the Name" ></div>
+<div class="box2">
+<input type="password" id="pass1" name="password" placeholder="Enter the password" ></div>
+
+
+<div class="button"><button onclick="validation()" id="login1">login</button></div>
+
+</form>
+</div>
+</div>
+</body>
+
+</html>

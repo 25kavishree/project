@@ -1,0 +1,365 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+      <style>
+  #btn1
+    {
+    width: 70px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 4PX; 
+    margin-left: 10px;
+    background-color: rgb(243, 163, 57);
+    border-style: none;
+    box-shadow: 2px 2px 5px lightgrey;
+    }
+    .container2{
+      margin-top: 20px;
+      background-color: rgb(243, 163, 57);
+    }
+    .foot{
+      padding-left: 50px;
+      padding-bottom: 30px;
+      font-size: small;
+      font-family:'Times New Roman', Times, serif;
+    }
+    .box1{
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-top: 30px;
+      animation-name: ani;
+      animation: rotation 2s  linear;
+       }
+       @keyframes rotation {
+      from {
+      transform: rotate(180deg);
+      }
+      to {
+      transform: translate(360deg);
+  }
+} 
+
+      
+       .box2{
+         height: 100px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        animation-name: ani;
+       animation-duration: 3s;
+       }
+       @keyframes ani{
+           from{
+               transform:translate(-1700px) rotate(90deg);
+           }
+           to{
+            transform:translate(0px) rotate(0deg);
+           }
+       }
+    .container5 {
+      grid-template-columns: auto auto;
+      display: grid;
+      margin-top: 70px;
+      margin-bottom: 100px; 
+      margin-left: 150px;    
+     
+    }
+    
+
+    </style>  
+      </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">SHOPPIEE.com</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Discount Sale</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Gallery
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Women</a></li>
+                      <li><a class="dropdown-item" href="#">Men</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Kids</a></li>
+                    </ul>
+                                       
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+            </nav>
+
+<div><button id="btn1" onclick="location.href= 'file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Java%20script/loginForm.html'" id="login" type="button">LOGIN</button></div><br>
+
+
+
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Images/banner1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Images/image27.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="file:///c:/Users/Kavithashree/OneDrive/Desktop/java script/project/Images/image25.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Images/banner23.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Images/image24.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+
+          <div><h3 style="text-align: center; margin-top: 30px; font-family: cursive;">SHOP CATEGORIES</h3></div>
+          
+          <div class="container">
+          <div class="row">
+          <div class="col-xl-3 col-md-4 col-sm-12 mt-5">
+            <img id="zoom1"src="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Images/cap1.jpg" height="300px" >
+          </div>
+          <div class="col-xl-3 col-md-4 col-sm-12 mt-5">
+              <img src="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Images/Capture22.jpg" height="300px" >
+            </div>
+             <div class="col-xl-3 col-md-4 col-sm-12 mt-5">
+                <img id="zoom2"src="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Images/cap1.jpg" height="300px" >
+                  </div>
+                  <div class="col-xl-3 col-md-4 col-sm-12 mt-5">
+                      <img src="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Images/Capture22.jpg" height="300px" >
+                    </div>
+          </div>
+          </div>
+          <div><h3 style="text-align: center; margin-top: 30px; font-family: cursive;">FOR SALES</h3></div>
+          
+            <div class="container">
+            <div class="row">
+            <div class="col-xl-4 col-md-6 col-sm-12 mt-5">
+              <img src="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Images/cap3.jpg" class="img-thumbnail">
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-12 mt-5">
+                <img src="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Images/Capture5.jpg" class="img-thumbnail">
+            </div>
+               <div class="col-xl-4 col-md-6 col-sm-12 mt-5">
+                 <img src="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Images/Capture4.jpg" class="img-thumbnail">
+                </div>
+               </div>
+            </div>
+            <div><h3 style="text-align: center; margin-top: 30px; font-family: cursive;">OTHER CATEGORIES</h3></div>
+           
+            <div class="container">          
+              <div class="row">
+              <div class="col-xl-3 col-md-6 col-sm-12 mt-5">
+                <div class="card">
+                <img src="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Images/cat5.jpg" class="img-thumbnail">
+                <div class="card-body">
+              <div class="card-text text-center">
+              <P>Bed sheets</P>
+            </div></div></div></div>
+                       
+                <div class="col-xl-3 col-md-6 col-sm-12 mt-5">
+                  <div class="card">
+                  <img src="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Images/cat6.jpg" class="img-thumbnail">
+                  <div class="card-body">
+                <div class="card-text text-center">
+                <P>Towel</P>
+              </div></div></div></div>
+              
+                <div class="col-xl-3 col-md-6 col-sm-12 mt-5">
+                  <div class="card">
+                  <img src="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Images/cat7.jpg" class="img-thumbnail">
+                  <div class="card-body">
+                <div class="card-text text-center">
+                <P>Cushion cover</P>
+              </div></div></div></div>
+              
+                <div class="col-xl-3 col-md-6 col-sm-12 mt-5">
+                  <div class="card">
+                  <img src="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Images/cat1.jpg" class="img-thumbnail">
+                  <div class="card-body">
+                <div class="card-text text-center">
+                <P>Bags</P>
+              </div></div></div></div>
+              <div class="container">          
+                <div class="row">
+                <div class="col-xl-3 col-md-6 col-sm-12 mt-5">
+                  <div class="card">
+                  <img src="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Images/cat1.jpg" class="img-thumbnail">
+                  <div class="card-body">
+                <div class="card-text text-center">
+                <P>Hand bags</P>
+              </div></div></div></div>
+                         
+                  <div class="col-xl-3 col-md-6 col-sm-12 mt-5">
+                    <div class="card">
+                    <img src="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Images/cat2.jpg" class="img-thumbnail">
+                    <div class="card-body">
+                  <div class="card-text text-center">
+                  <P>Shoe</P>
+                </div></div></div></div>
+                
+                  <div class="col-xl-3 col-md-6 col-sm-12 mt-5">
+                    <div class="card">
+                    <img src="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Images/cat3.jpg" class="img-thumbnail">
+                    <div class="card-body">
+                  <div class="card-text text-center">
+                  <P>Kids Shoe</P>
+                </div></div></div></div>
+                
+                  <div class="col-xl-3 col-md-6 col-sm-12 mt-5">
+                    <div class="card">
+                    <img src="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Images/cat4.jpg" class="img-thumbnail">
+                    <div class="card-body">
+                  <div class="card-text text-center">
+                  <P>Face mask</P>
+                </div></div></div></div>
+
+     
+       <div><h3 style="text-align: center; margin-top: 30px; font-family: cursive;">FASION STEALS</h3></div>
+
+          <div class="container">          
+          <div class="row">
+          <div class="col-xl-4 col-md-6 col-sm-12 mt-5">
+         <img src="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Images/under1.jpg" class="img-thumbnail">
+          </div>                   
+         <div class="col-xl-4 col-md-6 col-sm-12 mt-5">
+         <img src="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Images/under2.jpg" class="img-thumbnail">
+        </div>                 
+       <div class="col-xl-4 col-md-6 col-sm-12 mt-5">
+      <img src="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Images/under3.jpg" class="img-thumbnail">
+       </div></div></div></div>
+
+      <div class="container" style="text-align: center; font-family: cursive; margin-top: 60px; margin-bottom: 60px; padding-top: 40px; background-color:floralwhite">
+        <div class="row">
+       <h6>GETS LATEST OFFERS AND DEALS<BR>RIGHT IN YOUR INBOX.</h6>
+        </div>
+        <form style="padding-bottom: 40px;">
+          <input type="text" id="text11" placeholder="Enter Your Mail Address">       
+          <button onclick="validation1()" id="btn11" type="button">submit</button>
+      </form>
+      </div>
+
+      <div class= "container5">
+      <div class="box1">
+        <h3>Officially <br> Fashionable</h3>
+      <p>Working from home can be a tempting excuse to <br> lounge in your PJs all day. However, our new <br>
+      normal has taught us to seamlessly combine <br> comfort and fashion. Ace your fashion & ease the <br>
+    look is the martra to live by. </p>
+      </div>
+      <div class="box2">
+        <img src="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Images/image22.jpg" height="300px">
+      </div>
+      </div>
+
+
+       <div class="container2">
+         <div class="row">
+           <div class="foot col-xl-3 col-md-6 col-sm-12 mt-5">
+             <p>ABOUT US</p>
+             <P>MY ORDER</P>
+             <P>RETURNS</P>
+             <P>MY INFO</P>
+             <P>PERSONAL</P>
+           </div>
+       <div class="foot col-xl-3 col-md-6 col-sm-12 mt-5">
+            <p>MY ACCOUNT</p>
+            <P>FAQS</P>
+            <P>INVESTORS</P>
+            <P>BRAND STORE</P>
+            <P>PAYMENTS</P>
+          </div>
+             <div class="foot col-xl-3 col-md-6 col-sm-12 mt-5">
+            <p>PLOICIES</p>
+            <P>EXCHANGES</P>
+            <P>SHIPPING</P>
+            <P>PRIVACY</P>
+            <P>POLICY</P>
+          </div>
+       <div class="foot col-xl-3 col-md-6 col-sm-12 mt-5">
+            <p>CONTACT US</p>
+            <P>STORE LOCATION</P>
+            <P>CUSTOMER</P>
+            <P>SUPPORT</P>
+            <P>CONDITIONS</P>
+          </div>
+          </div>
+           </body>
+       <script src="file:///C:/Users/Kavithashree/OneDrive/Desktop/java%20script/project/Jquery/jquery.js"></script>
+        <script type ="text/Javascript">
+
+        function validation1()
+        {
+            var user = document.getElementById("text11").value;
+           var regu = /^([a-z A-Z\.-]+@([a-zA-Z0-9])+.([a-z]){2,8})$/;
+            
+            if(regu.test(user))
+            {
+                alert("valid Email");
+              }            
+            else
+            {
+               alert("invalid Email");
+              }            
+            }
+
+
+         $(document).ready(function(){
+
+         $("#zoom1").mouseover(function(){
+
+         $("#zoom1").animate({ height: "400px" }, 'slow')
+         });
+         });
+         $(document).ready(function(){
+
+         $("#zoom1").mouseout(function(){
+
+         $("#zoom1").animate({ height: "300px" }, 'slow')
+         });
+         });
+         $(document).ready(function(){
+
+         $("#zoom2").mouseover(function(){
+
+         $("#zoom2").animate({ height: "400px" }, 'slow')
+         });
+         });
+         $(document).ready(function(){
+
+         $("#zoom2").mouseout(function(){
+
+         $("#zoom2").animate({ height: "300px" }, 'slow')
+         });
+         });
+          
+           </script>
+</html>
